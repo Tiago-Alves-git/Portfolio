@@ -1,0 +1,63 @@
+.LeftContent{
+  align-items: baseline;
+  display: flex;
+  gap: 100px;
+  float: left;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 50px;
+  position: fixed;
+  overflow: hidden;
+}
+
+.Line{
+  border-top: 2px solid #fff;
+  display: block;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.NavUl{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 200px;
+  list-style-type: none;
+}
+
+.NavList {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.LineWrap {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.9s ease; /* Adiciona uma transição suave para um efeito mais agradável */
+  opacity: 0.5;
+}
+
+.Line {
+  height: 2px;
+  width: 0; /* Começa com largura zero */
+  background-color: white;
+  margin-right: 10px; /* Ajuste a margem conforme necessário */
+  transition: width 0.3s ease; /* Adiciona uma transição para a largura da linha */
+}
+
+.LineWrap.Active .Line {
+  width: 20px; /* Ajuste a largura desejada quando estiver ativo */
+}
+
+.LineWrap:hover,
+.LineWrap.Active {
+  opacity: 1; /* Opacidade quando em hover ou ativo */
+}
+
+.LineWrap.Active span {
+  margin-left: 10px; /* Ajuste a margem conforme necessário quando estiver ativo */
+}
+
+/* Adicione outros estilos conforme necessário para o seu projeto */
+

@@ -1,0 +1,115 @@
+.ProjectWrap {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin-left: 50%;
+  overflow-y: scroll;
+}
+
+.ProjectsCards{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 80%;
+  margin: 10%;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3); /* Ajuste aqui a força da sombra */
+  margin-top: 15px;
+}
+
+.ProjectsTexts{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.ProjectTech{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.CallToAction{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.CallToGit{
+  display: flex;
+  align-items: center;
+  align-content: baseline;
+}
+
+.ProjectsPictures{
+  /* display: none; */
+  height: 50%;
+}
+
+.ProjectsTexts {
+  margin-bottom: 20px;
+}
+
+.ProjectsTexts h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.ProjectsTexts p {
+  font-size: 16px;
+}
+
+.ProjectTech {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.ProjectTech img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.ButtonCallToAction {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.ButtonCallToAction {
+  text-decoration: none;
+}
+
+.ButtonCallToAction:hover {
+  background-color: #2980b9;
+}
+
+.CallToAction {
+  display: flex;
+  align-items: center;
+}
+
+.CallToGit img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.ProjectsPicturesContainer {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.ProjectsPictures {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

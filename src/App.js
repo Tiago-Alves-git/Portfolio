@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from 'react';
+import './Style/App.css';
+import MouseTracker from './Components/MouseTracker';
+import Hero from './Pages/Hero';
+import Projects from './Pages/Projects';
+import About from './Pages/About';
 
 function App() {
+  const [mousePos, setMousePos] = useState({});
+  const [activeSection, setSection] = useState("About");
+
+
+  const updateState = (string) => {
+    setSection(string);
+  }
+  useEffect(() => {
+    const handleMouseMove = (event) => {
+      setMousePos({ x: event.clientX, y: event.clientY });    
+    };
+
+
+    window.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      window.removeEventListener(
+        'mousemove',
+        handleMouseMove
+      );
+    };
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <MouseTracker mousePos = { mousePos } />
+      <Hero updateState = {updateState} activeSection = {activeSection}/>
+      <About activeSection = {activeSection}/>
+      <Projects activeSection = {activeSection} />
     </div>
   );
 }
