@@ -29,7 +29,7 @@ export default class Projects extends Component {
             <img src={array.Thumbnail} alt='wrong link' className='ProjectsPictures'></img>
           </div>
             <div className='CallToAction'>
-            <a className='ButtonCallToAction' href={array.Github} target="_blank" rel="noopener noreferrer"> Ir ao site </a>
+            <a className='ButtonCallToAction' href={array.WebSite} target="_blank" rel="noopener noreferrer"> Ir ao site </a>
               <p> Ou </p>
               <div className='CallToGit'>
             <a className='ButtonCallToAction' href={array.Github} target="_blank" rel="noopener noreferrer"> Veja no GitHub </a>
