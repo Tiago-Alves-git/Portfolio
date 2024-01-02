@@ -1,0 +1,60 @@
+/* Deck.css */
+
+.deck {
+  display: flex;
+}
+
+.card {
+  border-radius: 5%;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Sombra suave com cor mais clara */
+  transition: box-shadow 0.3s ease-in-out; /* Transição suave ao alterar a sombra */
+  width: 100px; /* Defina a largura desejada para suas cartas */
+  height: 150px; /* Defina a altura desejada para suas cartas */
+  margin-right: 10px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s ease-in-out;;
+  animation: pulse 2s infinite; /* Adiciona a animação pulsante */
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+}
+
+.card.hovered, .card.hovered.tilted-left, .card.hovered.tilted-right {
+  transform: translateY(-20px); /* Ajuste conforme necessário */
+  transform: scale3d(1.5,1.5,1.5);
+  z-index: +10;
+  animation: none; /* Remove a animação ao passar o mouse */
+}
+
+.card.tilted-left {
+  transform: rotate(-7deg); /* Ajuste conforme necessário */
+}
+
+.card.tilted-right {
+  transform: rotate(7deg); /* Ajuste conforme necessário */
+}
+
+/* Adiciona uma sombra suave à imagem */
+img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: box-shadow 0.3s ease-in-out; /* Transição suave ao alterar a sombra */
+}
+
+/* Adiciona uma sombra mais intensa ao passar o mouse */
+img:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais intensa ao passar o mouse */
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  }
+}
