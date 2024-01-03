@@ -8,6 +8,7 @@ export default class Projects extends Component {
     if (activeSection !== "Projects") return null
     return (
       projects.map((array, index) => {
+        const { Login } = array;
         return(
           <div className='ProjectWrap' key={ index } style={{ visibility: activeSection === "Projects" ? "visible" : "hidden" }}>
           <div className="ProjectsCards">
@@ -28,6 +29,12 @@ export default class Projects extends Component {
           <div className='ProjectsPicturesContainer'>
             <img src={array.Thumbnail} alt='wrong link' className='ProjectsPictures'></img>
           </div>
+          { Login?.email ? (
+          <div className='ProjectsLogin'>
+            <p> Email: { Login.email } </p>
+            <p> Senha: { Login.password } </p>
+          </div>
+             ) : null }
             <div className='CallToAction'>
             <a className='ButtonCallToAction' href={array.WebSite} target="_blank" rel="noopener noreferrer"> Ir ao site </a>
               <p> Ou </p>
