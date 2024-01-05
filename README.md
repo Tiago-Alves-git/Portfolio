@@ -60,3 +60,4 @@ São mais de 1.500H de formação que aborda fundamentos de desenvolvimento web,
 Estou animado para colaborar em projetos desafiadores e contribuir para o sucesso de equipes de desenvolvimento. Não hesite em entrar em contato para discutir oportunidades de colaboração ou simplesmente trocar ideias!
 
 ---
+
