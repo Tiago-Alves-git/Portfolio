@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Tiago_Portfolio/static/css/main.a55fe658.css",
+    "main.js": "/Tiago_Portfolio/static/js/main.630a7dd5.js",
+    "static/js/787.5790cd8d.chunk.js": "/Tiago_Portfolio/static/js/787.5790cd8d.chunk.js",
+    "static/media/RecipeApp.png": "/Tiago_Portfolio/static/media/RecipeApp.e22b595f98b3955598c2.png",
+    "static/media/FormaturaFilho.jpeg": "/Tiago_Portfolio/static/media/FormaturaFilho.905f62e5e0e6f3166162.jpeg",
+    "static/media/Cafezinho35.jpeg": "/Tiago_Portfolio/static/media/Cafezinho35.65b57803cf23399ba2e7.jpeg",
+    "static/media/reey-regular-webfont.woff": "/Tiago_Portfolio/static/media/reey-regular-webfont.b23b6f26676da59ab6e1.woff",
+    "static/media/reey-regular-webfont.woff2": "/Tiago_Portfolio/static/media/reey-regular-webfont.7a0d1ebdbdd5cda059a5.woff2",
+    "static/media/walletApp.png": "/Tiago_Portfolio/static/media/walletApp.fb588a0466f432d340a8.png",
+    "static/media/Foto minha de perfil.jpg": "/Tiago_Portfolio/static/media/Foto minha de perfil.3cfff4ebbfcd5287b596.jpg",
+    "static/media/alexbrush-regular-webfont.woff": "/Tiago_Portfolio/static/media/alexbrush-regular-webfont.a3cf1df17b6316c78d06.woff",
+    "static/media/greatvibes-regular-webfont.woff": "/Tiago_Portfolio/static/media/greatvibes-regular-webfont.b3095329b9ad6f568844.woff",
+    "static/media/alexbrush-regular-webfont.woff2": "/Tiago_Portfolio/static/media/alexbrush-regular-webfont.27286d14df22f45c2d53.woff2",
+    "static/media/greatvibes-regular-webfont.woff2": "/Tiago_Portfolio/static/media/greatvibes-regular-webfont.2b4b478d7951b7999a2e.woff2",
+    "index.html": "/Tiago_Portfolio/index.html",
+    "main.a55fe658.css.map": "/Tiago_Portfolio/static/css/main.a55fe658.css.map",
+    "main.630a7dd5.js.map": "/Tiago_Portfolio/static/js/main.630a7dd5.js.map",
+    "787.5790cd8d.chunk.js.map": "/Tiago_Portfolio/static/js/787.5790cd8d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a55fe658.css",
+    "static/js/main.630a7dd5.js"
+  ]
+}
