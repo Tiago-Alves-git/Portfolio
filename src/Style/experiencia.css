@@ -1,0 +1,21 @@
+.ExpWrap {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin-left: 50%;
+  overflow-y: hidden;
+ }
+
+.experiencia {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 80%;
+  margin: 10%;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3); /* Ajuste aqui a força da sombra */
+  margin-top: 15px;
+}

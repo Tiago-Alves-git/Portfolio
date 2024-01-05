@@ -4,6 +4,8 @@ import MouseTracker from './Components/MouseTracker';
 import Hero from './Pages/Hero';
 import Projects from './Pages/Projects';
 import About from './Pages/About';
+import experiencias from './Content/Projects/Experience';
+import Experiencia from './Pages/Experiencia';
 
 function App() {
   const [mousePos, setMousePos] = useState({});
@@ -50,6 +52,8 @@ function App() {
       <Hero updateState = {updateState} activeSection = {activeSection} isSmallScreen={ isSmallScreen } />
       <About activeSection = {activeSection} isSmallScreen={ isSmallScreen } />
       <Projects activeSection = {activeSection} isSmallScreen={ isSmallScreen } />
+      <Experiencia experiencia={experiencias} activeSection={ activeSection } />
+    
     </div>
   );
 }
