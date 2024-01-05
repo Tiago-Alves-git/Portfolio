@@ -33,3 +33,44 @@ h2 {
   font-weight: 600; /* Ajuste conforme necessário */
   margin-bottom: 15px; /* Espaçamento inferior */
 }
+
+.App.Small {
+  display: flex;
+  flex-direction: column;
+}
+
+.App.Small h1 {
+  font-size: 1.5em; /* Ajuste conforme necessário */
+  margin-bottom: 0;
+}
+
+.App.Small h2 {
+  font-size: 1em; /* Ajuste conforme necessário */
+  margin-bottom: 0;
+}
+
+.App.Small p {
+  font-size: 0.5em; /* Ajuste conforme necessário */
+  margin-bottom: 0;
+}
+
+
+@media screen and (min-width: 780px) and (max-width: 1760px) {
+  h1 {
+    font-size: 2.5em; /* Ajuste conforme necessário */
+  }
+
+  h2 {
+    font-size: 2em; /* Ajuste conforme necessário */
+  }
+
+  p {
+    font-size: 1.5em; /* Ajuste conforme necessário */
+  }
+
+  .App {
+    display: flex;
+    flex-direction: column;
+  }
+  /* Adicione estilos adicionais conforme necessário para outras classes ou elementos */
+}

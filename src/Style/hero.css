@@ -2,7 +2,7 @@
   align-items: baseline;
   display: flex;
   gap: 100px;
-  float: left;
+  /* float: left; */
   flex-direction: column;
   justify-content: space-around;
   margin: 50px;
@@ -61,3 +61,28 @@
 
 /* Adicione outros estilos conforme necessário para o seu projeto */
 
+/* Estilização para dispositivos moveis */
+
+.Contacts {
+  display: flex;
+  position: fixed;
+  bottom: 100px;
+  gap: 20px;
+}
+
+.ContactsSmall {
+  position: static;
+}
+
+@media screen and (min-width: 780px) and (max-width: 1760px) {
+  /* Adicione estilos adicionais conforme necessário para outras classes ou elementos */
+  .Contacts {
+    position: static;
+  }
+  .LeftContent{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+}

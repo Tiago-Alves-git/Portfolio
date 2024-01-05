@@ -7,9 +7,9 @@ import NavItem from '../Components/NavItems';
 
 export default class Hero extends Component {
   render() {
-    const { updateState, activeSection } = this.props;
+    const { updateState, activeSection, isSmallScreen } = this.props;
     return (
-      <div className='LeftContent'>
+      <div className={ isSmallScreen ? 'LeftContentSmall' : 'LeftContent' }>
         <div className='Hero Text'>
         <h1> Tiago Alves </h1>
         <h2> Desenvolvedor FullStack e Designer de Produtos </h2>
@@ -20,7 +20,7 @@ export default class Hero extends Component {
       <NavItem label="Experiencia" updateState={updateState} activeSection = {activeSection}/>
       <NavItem label="Contato" updateState={updateState} activeSection = {activeSection}/>
      </ul>
-        <div className='Contacts' style={{ display: "flex",position: "fixed", bottom: 100, gap: "20px" }}>
+        <div className={ isSmallScreen ? 'ContactsSmall' : 'Contacts' }>
           <a href='https://github.com/Tiago-Alves-git' target="_blank" rel="noopener noreferrer">
           <img src={github} 
           alt='gitHub link'

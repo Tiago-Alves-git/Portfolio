@@ -105,11 +105,16 @@
 
 .ProjectsPicturesContainer {
   flex: 1;
-  margin-left: 20px;
+  width: 100%;
 }
 
 .ProjectsPictures {
   width: 100%;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ProjectWrapSmall {
+  display: flex;
+  margin-left: 0;
 }

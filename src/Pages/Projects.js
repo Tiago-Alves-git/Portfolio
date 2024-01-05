@@ -4,13 +4,13 @@ import '../Style/projects.css'
 
 export default class Projects extends Component {
   render() {
-    const { activeSection } = this.props;
+    const { activeSection, isSmallScreen } = this.props;
     if (activeSection !== "Projects") return null
     return (
       projects.map((array, index) => {
         const { Login } = array;
         return(
-          <div className='ProjectWrap' key={ index } style={{ visibility: activeSection === "Projects" ? "visible" : "hidden" }}>
+          <div className={ isSmallScreen ? 'ProjectWrapSmall' : 'ProjectWrap' } key={ index } style={{ visibility: activeSection === "Projects" ? "visible" : "hidden" }}>
           <div className="ProjectsCards">
           <div className='ProjectsTexts'>
             <h2 style={{ color: "white" }}> { array.Name } </h2>
