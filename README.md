@@ -1,75 +1,62 @@
-<<<<<<< HEAD
-# Portfolio
-Portfolio pessoal de desenvolvimento web full stack
-=======
-# Getting Started with Create React App
+# Tiago Alves Fernandes
+## Desenvolvedor Full Stack
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bem-vindo ao meu portfólio! Sou um desenvolvedor Full Stack com experiência em tecnologias como React, JavaScript e C#. Estou sempre buscando desafios interessantes e oportunidades para contribuir para projetos inovadores.
 
-## Available Scripts
+## Projetos Destacados
 
-In the project directory, you can run:
+### [Projeto 1: Recipe App]
+O CookBook App é uma aplicação que utiliza as APIs Meals.db e Cocktail.db para oferecer uma ampla variedade de receitas de alimentos e bebidas. A aplicação possui uma página principal que lista todas as receitas disponíveis, com opções de filtragem por tipos de alimentos e bebidas. Além disso, há uma página detalhada para cada receita, onde os usuários podem seguir passos, marcar o progresso, assistir a tutoriais em vídeo e adicionar receitas aos favoritos.
 
-### `npm start`
+[https://github.com/Tiago-Alves-git/Recipe_app](#)
+[https://recipeapp.up.railway.app/](#)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### [Projeto 2: Wallet]
+O projeto Carteira Digital é uma aplicação desenvolvida em React que permite aos usuários registrar e gerenciar despesas internacionais em diversas moedas diferentes. A aplicação oferece a funcionalidade de adicionar despesas com informações detalhadas, incluindo valores, descrições, formas de pagamento e tags.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[https://github.com/Tiago-Alves-git/Wallet](#)
+[https://wallet.up.railway.app/](#)
 
-### `npm test`
+## Experiência Profissional
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### [Free Lancer]
+**Cargo:** Desenvolvedor Full Stack  
+**Período:** 01/2024 - Atualmente  
 
-### `npm run build`
+Realizo projetos em React, Js e C# como free lancer.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### [Wi8 Car`s]
+**Cargo:** Auxiliar Administrativo 
+**Período:** 01/2019 - 01/2020  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Educação
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### [Trybe]
+**Curso:** Desenvolvimento Web Full Stack  
+**Período:** 2022 - 2024  
 
-### `npm run eject`
+A trybe é uma escola de desenvolvimento web que tem comprometimento genuíno com o sucesso profissional dos estudantes.
+São mais de 1.500H de formação que aborda fundamentos de desenvolvimento web, desenvolvimento, Front-end, Back-end, Ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Habilidades Técnicas
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Linguagens de Programação:** JavaScript, C#, HTML, CSS
+- **Bibliotecas e Frameworks:** React, Node.js, Express.js
+- **Bancos de Dados:** MongoDB, SQL Server
+- **Outras Ferramentas e Tecnologias:** Git, Webpack, RESTful APIs
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Certificações
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Certificado em Front-End
+- Certificado em Back-End
+- Certificado em Fundamentos Web
 
-## Learn More
+## Contato
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **E-mail:** tiagoalvesfernandes81@gmail.com
+- **LinkedIn:** [Seu Perfil LinkedIn](https://www.linkedin.com/in/tiago-fernandes-b5854a17b/)
+- **GitHub:** [Seu Perfil GitHub](https://github.com/Tiago-Alves-git)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Estou animado para colaborar em projetos desafiadores e contribuir para o sucesso de equipes de desenvolvimento. Não hesite em entrar em contato para discutir oportunidades de colaboração ou simplesmente trocar ideias!
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> master
+---
