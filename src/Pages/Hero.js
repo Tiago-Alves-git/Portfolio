@@ -18,7 +18,6 @@ export default class Hero extends Component {
       <NavItem label="About" updateState={updateState} activeSection = {activeSection}/>
       <NavItem label="Projects" updateState={updateState} activeSection = {activeSection}/>
       <NavItem label="Experiencia" updateState={updateState} activeSection = {activeSection}/>
-      <NavItem label="Contato" updateState={updateState} activeSection = {activeSection}/>
      </ul>
         <div className={ isSmallScreen ? 'ContactsSmall' : 'Contacts' }>
           <a href='https://github.com/Tiago-Alves-git' target="_blank" rel="noopener noreferrer">

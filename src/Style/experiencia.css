@@ -19,3 +19,16 @@
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3); /* Ajuste aqui a força da sombra */
   margin-top: 15px;
 }
+
+@media screen and (max-width: 780px) {
+  /* Adicione estilos adicionais conforme necessário para outras classes ou elementos */
+  .ExpWrap {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 0;
+    overflow-y: hidden;
+   }
+}
+

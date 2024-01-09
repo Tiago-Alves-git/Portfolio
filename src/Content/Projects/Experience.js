@@ -1,15 +1,15 @@
 const experiencias = [
   {
     cargo: 'Desenvolvedor Frontend',
-    empresa: 'Empresa ABC',
-    periodo: 'Jan 2022 - Presente',
+    empresa: 'FreeLancer',
+    periodo: 'Jan 2023 - Presente',
     descricao: 'Desenvolvimento e manutenção de interfaces de usuário responsivas.'
   },
   {
-    cargo: 'Analista de Sistemas',
-    empresa: 'Empresa XYZ',
-    periodo: 'Mar 2020 - Dez 2021',
-    descricao: 'Análise e implementação de requisitos para sistemas empresariais.'
+    cargo: 'Desenvolvedor Backend',
+    empresa: 'FreeLancer',
+    periodo: 'Dez 2023 - Presente',
+    descricao: 'Desenvolvimento e manutenção de sistemas, desenvolvimento de Api`s.'
   },
   // Adicione mais experiências conforme necessário
 ];
