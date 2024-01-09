@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Tiago_Portfolio/static/css/main.4ec88522.css",
-    "main.js": "/Tiago_Portfolio/static/js/main.c65ec32a.js",
+    "main.css": "/Tiago_Portfolio/static/css/main.b07022f5.css",
+    "main.js": "/Tiago_Portfolio/static/js/main.d833e7e7.js",
     "static/js/787.5790cd8d.chunk.js": "/Tiago_Portfolio/static/js/787.5790cd8d.chunk.js",
     "static/media/RecipeApp.png": "/Tiago_Portfolio/static/media/RecipeApp.e22b595f98b3955598c2.png",
     "static/media/FormaturaFilho.jpeg": "/Tiago_Portfolio/static/media/FormaturaFilho.905f62e5e0e6f3166162.jpeg",
@@ -15,12 +15,12 @@
     "static/media/alexbrush-regular-webfont.woff2": "/Tiago_Portfolio/static/media/alexbrush-regular-webfont.27286d14df22f45c2d53.woff2",
     "static/media/greatvibes-regular-webfont.woff2": "/Tiago_Portfolio/static/media/greatvibes-regular-webfont.2b4b478d7951b7999a2e.woff2",
     "index.html": "/Tiago_Portfolio/index.html",
-    "main.4ec88522.css.map": "/Tiago_Portfolio/static/css/main.4ec88522.css.map",
-    "main.c65ec32a.js.map": "/Tiago_Portfolio/static/js/main.c65ec32a.js.map",
+    "main.b07022f5.css.map": "/Tiago_Portfolio/static/css/main.b07022f5.css.map",
+    "main.d833e7e7.js.map": "/Tiago_Portfolio/static/js/main.d833e7e7.js.map",
     "787.5790cd8d.chunk.js.map": "/Tiago_Portfolio/static/js/787.5790cd8d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ec88522.css",
-    "static/js/main.c65ec32a.js"
+    "static/css/main.b07022f5.css",
+    "static/js/main.d833e7e7.js"
   ]
 }
