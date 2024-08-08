@@ -6,7 +6,7 @@ const Experiencia = ({ experiencia, activeSection }) => {
   if (activeSection !== "Experiencia") return null
 
   return (
-    <div className='ExpWrap'>
+    <div className='ExpWrap' id='Experiencia'>
       { experiencia.map((exp, index) => {
         return (
     <div className="experiencia" key={ index }>

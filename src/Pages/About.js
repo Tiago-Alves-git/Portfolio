@@ -11,7 +11,7 @@ export default class About extends Component {
     if (activeSection !== "About") return null
 
     return (
-      <div className={ isSmallScreen ? 'AboutContainerSmall' : 'AboutContainer' } style={{ visibility: activeSection === "About" ? "visible" : "hidden" }}>
+      <div className={ isSmallScreen ? 'AboutContainerSmall' : 'AboutContainer' } style={{ visibility: activeSection === "About" ? "visible" : "hidden" }} id='About'>
         <div className="gallery">
         <Portrait links={ [imagem, imagem2, imagem3] } />
         </div>

@@ -10,8 +10,8 @@ export default class Projects extends Component {
       projects.map((array, index) => {
         const { Login } = array;
         return(
-          <div className={ isSmallScreen ? 'ProjectWrapSmall' : 'ProjectWrap' } key={ index } style={{ visibility: activeSection === "Projects" ? "visible" : "hidden" }}>
-          <div className="ProjectsCards">
+          <div className={ isSmallScreen ? 'ProjectWrapSmall' : 'ProjectWrap' } key={ index } style={{ visibility: activeSection === "Projects" ? "visible" : "hidden" }} >
+          <div className="ProjectsCards" id='Projects'>
           <div className='ProjectsTexts'>
             <h2 style={{ color: "white" }}> { array.Name } </h2>
             <p style={{ color: "white" }}> { array.Description } </p>

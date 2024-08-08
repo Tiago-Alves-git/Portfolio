@@ -12,9 +12,10 @@ export default class Hero extends Component {
       <div className={ isSmallScreen ? 'LeftContentSmall' : 'LeftContent' }>
         <div className='Hero Text'>
         <h1> Tiago Alves </h1>
-        <h2> Desenvolvedor FullStack e Designer de Produtos </h2>
+        <h2> Desenvolvedor FullStack e Analista de Segurança Blue Team </h2>
         </div>
         <ul style={{ padding: 0 }}>
+      <NavItem label="Home" updateState={updateState} activeSection = {activeSection}/>
       <NavItem label="About" updateState={updateState} activeSection = {activeSection}/>
       <NavItem label="Projects" updateState={updateState} activeSection = {activeSection}/>
       <NavItem label="Experiencia" updateState={updateState} activeSection = {activeSection}/>

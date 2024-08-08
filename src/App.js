@@ -9,7 +9,7 @@ import Experiencia from './Pages/Experiencia';
 
 function App() {
   const [mousePos, setMousePos] = useState({});
-  const [activeSection, setSection] = useState("About");
+  const [activeSection, setSection] = useState("Home");
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -29,7 +29,12 @@ function App() {
 
   const updateState = (string) => {
     setSection(string);
+    const section = document.getElementById(activeSection);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
   }
+
   useEffect(() => {
     const handleMouseMove = (event) => {
       setMousePos({ x: event.clientX, y: event.clientY });    
