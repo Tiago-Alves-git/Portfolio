@@ -4,15 +4,18 @@ import linkedin from '../Style/Icons/icons8-linkedin-80 (1).png';
 import message from '../Style/Icons/icons8-wechat-64.png';
 import '../Style/hero.css'
 import NavItem from '../Components/NavItems';
+import LongMenu from '../Components/LongMenu';
 
 export default class Hero extends Component {
   render() {
-    const { updateState, activeSection, isSmallScreen } = this.props;
+    const { updateState, activeSection, isSmallScreen, language, setLanguage } = this.props;
+    
     return (
       <div className={ isSmallScreen ? 'LeftContentSmall' : 'LeftContent' }>
+        <LongMenu language={ language } setLanguage={ setLanguage } />
         <div className='Hero Text'>
         <h1> Tiago Alves </h1>
-        <h2> Desenvolvedor FullStack e Analista de Segurança Blue Team </h2>
+        <h2> Especialista em FullStack e Analista em CiberSegurança </h2>
         </div>
         <ul style={{ padding: 0 }}>
       <NavItem label="Home" updateState={updateState} activeSection = {activeSection}/>

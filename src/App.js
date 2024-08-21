@@ -11,6 +11,7 @@ function App() {
   const [mousePos, setMousePos] = useState({});
   const [activeSection, setSection] = useState("Home");
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [language, setLanguage] = useState('En');
 
   useEffect(() => {
     const handleResize = () => {
@@ -54,7 +55,8 @@ function App() {
   return (
     <div className={`App ${ isSmallScreen ? 'Small' : '' }`}>
       <MouseTracker mousePos = { mousePos } />
-      <Hero updateState = {updateState} activeSection = {activeSection} isSmallScreen={ isSmallScreen } />
+      <Hero updateState = {updateState} activeSection = {activeSection} 
+      isSmallScreen={ isSmallScreen } language={ language } setLanguage={ setLanguage } />
       <About activeSection = {activeSection} isSmallScreen={ isSmallScreen } />
       <Projects activeSection = {activeSection} isSmallScreen={ isSmallScreen } />
       <Experiencia experiencia={experiencias} activeSection={ activeSection } />
