@@ -55,7 +55,7 @@ export default class LongMenu extends React.Component {
 
 
     return (
-      <div>
+      <div style={{ display: 'flex', alignSelf: 'flex-start' }}>
         <IconButton
           aria-label="more"
           id="long-button"
@@ -75,12 +75,6 @@ export default class LongMenu extends React.Component {
           anchorEl={anchorEl}
           open={open}
           onClose={handleClose}
-          PaperProps={{
-            style: {
-              maxHeight: ITEM_HEIGHT * 4.5,
-              width: '20ch',
-            },
-          }}
         >
           {language === 'PT'
             ? optionsPt.map((option, index) => (

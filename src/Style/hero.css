@@ -1,11 +1,11 @@
 .LeftContent{
   align-items: baseline;
   display: flex;
-  gap: 100px;
+  gap: 50px;
   /* float: left; */
   flex-direction: column;
   justify-content: space-around;
-  margin: 50px;
+  /* margin: 50px; */
   position: fixed;
   overflow: hidden;
 }
@@ -20,9 +20,11 @@
 .NavUl{
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
   max-width: 200px;
   list-style-type: none;
+  align-self: flex-start;
+  margin-left: '20px';
 }
 
 .NavList {

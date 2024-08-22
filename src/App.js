@@ -57,10 +57,6 @@ function App() {
       <MouseTracker mousePos = { mousePos } />
       <Hero updateState = {updateState} activeSection = {activeSection} 
       isSmallScreen={ isSmallScreen } language={ language } setLanguage={ setLanguage } />
-      <About activeSection = {activeSection} isSmallScreen={ isSmallScreen } />
-      <Projects activeSection = {activeSection} isSmallScreen={ isSmallScreen } />
-      <Experiencia experiencia={experiencias} activeSection={ activeSection } />
-    
     </div>
   );
 }
