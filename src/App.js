@@ -11,7 +11,7 @@ function App() {
   const [mousePos, setMousePos] = useState({});
   const [activeSection, setSection] = useState("Home");
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [language, setLanguage] = useState('En');
+  const [language, setLanguage] = useState('EN');
 
   useEffect(() => {
     const handleResize = () => {

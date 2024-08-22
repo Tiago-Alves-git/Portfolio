@@ -6,7 +6,6 @@ class MouseTracker extends Component {
   render() {
     const { mousePos } = this.props;
     const { x, y } = mousePos;
-    console.log(x, y);
     return (
       <div style={{
         width: 250,

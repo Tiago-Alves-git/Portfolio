@@ -5,33 +5,55 @@ import MenuItem from '@mui/material/MenuItem';
 import { Language } from '@mui/icons-material';
 
 const optionsEn = [
-  'Portuguese | Pt-Br',
-  'English | En-Us',
+  { name: 'Portuguese', code: 'PT'},
+  { name: 'English', code: 'EN'},
 ];
 
 const optionsPt = [
-    'Português | Pt-Br',
-    'Inglês | En-Us',
-  ];
+  { name: 'Português', code: 'PT'},
+  { name: 'Inglês', code: 'EN'},
+];
 
 const ITEM_HEIGHT = 48;
 
 export default class LongMenu extends React.Component {
-
-  render () {
-    this.state={
+  constructor(props) {
+    super(props);
+    this.state = {
       anchorEl: null,
-
+      language: 'PT'
     };
-    const open = Boolean(anchorEl);
-    const handleClick = (event) => {
-      setAnchorEl(event.currentTarget);
-    };
-    const handleClose = () => {
-      setAnchorEl(null);
-    };
+  }
   
-    const { language } = this.props;
+  render() {
+    const { anchorEl } = this.state; // Moveu para antes do uso de anchorEl
+    const { language, setLanguage } = this.props;
+    const open = Boolean(anchorEl);
+
+    const handleClick = (event) => {
+      this.setState((prevState) => {
+        return {
+          ...prevState,
+          anchorEl: event,
+        };
+      });
+    };
+
+    const handleClose = (e) => {
+      const { target } = e;
+      const atributo = target.getAttribute('value');
+      setLanguage(atributo);
+      this.setState((prevState) => {
+        return {
+          ...prevState,
+          anchorEl: null,
+          language: atributo,
+        };
+      });
+      
+    };
+
+
     return (
       <div>
         <IconButton
@@ -60,17 +82,19 @@ export default class LongMenu extends React.Component {
             },
           }}
         >
-          { language === 'PT' ? optionsPt.map((option) => (
-            <MenuItem key={option} selected={option === 'Pyxis'} onClick={handleClose}>
-              {option}
+          {language === 'PT'
+            ? optionsPt.map((option, index) => (
+                <MenuItem key={index} onClick={(e) => handleClose(e)} value={option.code}>
+                  {option.name}
+                </MenuItem>
+              ))
+            : optionsEn.map((option, index) => (
+              <MenuItem key={index} onClick={(e) => handleClose(e)} value={option.code}>
+              {option.name}
             </MenuItem>
-          )) : optionsEn.map((option) => (
-            <MenuItem key={option} selected={option === 'Pyxis'} onClick={handleClose}>
-              {option}
-            </MenuItem>
-          ))}
+              ))}
         </Menu>
       </div>
     );
   }
-  }
+}
