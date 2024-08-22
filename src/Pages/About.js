@@ -8,9 +8,12 @@ import imagem3 from '../Content/Pictures/Cafezinho35.jpeg'
 export default class About extends Component {
   render() {
     const { activeSection, isSmallScreen } = this.props;
-    if (activeSection === "About" || "Sobre mim")
+    let validation = activeSection === "About" || "Sobre mim" ? true : false;
+    console.log(validation);
+    
+  if (activeSection !== "About" && activeSection !== "Sobre mim") return null;
     return (
-      <div className={ isSmallScreen ? 'AboutContainerSmall' : 'AboutContainer' } style={{ visibility: activeSection === "About" || "Sobre mim" ? "visible" : "hidden" }} id='About'>
+      <div className={ isSmallScreen ? 'AboutContainerSmall' : 'AboutContainer' } style={{ visibility: validation ? "visible" : "hidden" }} id={ activeSection }>
         <div className="gallery">
         <Portrait links={ [imagem, imagem2, imagem3] } />
         </div>
@@ -36,6 +39,5 @@ export default class About extends Component {
 
       </div>
     )
-    else return null;
   }
 }
