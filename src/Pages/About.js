@@ -8,10 +8,9 @@ import imagem3 from '../Content/Pictures/Cafezinho35.jpeg'
 export default class About extends Component {
   render() {
     const { activeSection, isSmallScreen } = this.props;
-    if (activeSection !== "About") return null
-
+    if (activeSection === "About" || "Sobre mim")
     return (
-      <div className={ isSmallScreen ? 'AboutContainerSmall' : 'AboutContainer' } style={{ visibility: activeSection === "About" ? "visible" : "hidden" }} id='About'>
+      <div className={ isSmallScreen ? 'AboutContainerSmall' : 'AboutContainer' } style={{ visibility: activeSection === "About" || "Sobre mim" ? "visible" : "hidden" }} id='About'>
         <div className="gallery">
         <Portrait links={ [imagem, imagem2, imagem3] } />
         </div>
@@ -37,5 +36,6 @@ export default class About extends Component {
 
       </div>
     )
+    else return null;
   }
 }

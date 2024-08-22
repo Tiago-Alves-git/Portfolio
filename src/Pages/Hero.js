@@ -20,13 +20,15 @@ export default class Hero extends Component {
         <LongMenu language={ language } setLanguage={ setLanguage } />
         <div className='Hero Text'>
         <h1> Tiago Alves </h1>
-        <h2> Especialista em FullStack e Analista em CiberSegurança </h2>
+        { language === 'PT' ? <h2> Especialista em FullStack e Analista em CiberSegurança </h2> : (
+          <h2> FullStack developer and analyst on CyberSecurity </h2>) }
+        
         </div>
         <ul style={{ padding: 0 }} className='NavUl'>
-      <NavItem label="Home" updateState={updateState} activeSection = {activeSection}/>
-      <NavItem label="About" updateState={updateState} activeSection = {activeSection}/>
-      <NavItem label="Projects" updateState={updateState} activeSection = {activeSection}/>
-      <NavItem label="Experiencia" updateState={updateState} activeSection = {activeSection}/>
+      <NavItem label={ language === 'PT' ? 'Inicio' : 'Home'} updateState={updateState} activeSection = {activeSection}/>
+      <NavItem label={ language === 'PT' ? 'Sobre mim' : 'About'} updateState={updateState} activeSection = {activeSection}/>
+      <NavItem label={ language === 'PT' ? 'Projetos' : 'Projects'} updateState={updateState} activeSection = {activeSection}/>
+      <NavItem label={ language === 'PT' ? 'Experiencias' : 'Experiences'} updateState={updateState} activeSection = {activeSection}/>
      </ul>
      <div>
      <About activeSection = {activeSection} isSmallScreen={ isSmallScreen } language={ language } />

@@ -3,13 +3,12 @@ import '../Style/experiencia.css';
 
 const Experiencia = ({ experiencia, activeSection }) => {
   // const { cargo, empresa, periodo, descricao } = experiencia;
-  if (activeSection !== "Experiencia") return null
-
+  if (activeSection === "Experiencias" || "Experiences")
   return (
-    <div className='ExpWrap' id='Experiencia'>
+    <div className='ExpWrap' style={{ visibility: activeSection === "Experiencias" || "Experiences" ? "visible" : "hidden" }} id='Experiencia'>
       { experiencia.map((exp, index) => {
         return (
-    <div className="experiencia" key={ index }>
+          <div className="experiencia" key={ index }>
       <h2>{exp.cargo}</h2>
       <h3>{exp.empresa}</h3>
       <p className="periodo">{exp.periodo}</p>
@@ -19,6 +18,7 @@ const Experiencia = ({ experiencia, activeSection }) => {
       }) }
     </div>
   );
+  else return null
 };
 
 export default Experiencia;
